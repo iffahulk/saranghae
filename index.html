@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Saranghae Street Food</title>
+    <link rel="stylesheet" href="p1.css">
+  </head>
+  <body>
+
+    <ul>
+      <li><a class="page-scroll" href="#home">HOME</a></li>
+      <li><a class="page-scroll" href="#menu">MENU</a></li>
+      <li><a class="page-scroll" href="#promo">PROMOTIONS</a></li>
+      <li><a class="page-scroll" href="#location">LOCATIONS</a></li>
+      <li><a class="page-scroll" href="#contact">CONTACT US</a></li>
+    </ul>
+
+    <br><div id="home" class="section">
+        <div class="about-section section-body" style="padding-left:0px; padding-right:0px;">
+            <div class="container contContainer">
+                <div class="col-lg-10 col-lg-offset-1 col-md-12" style="padding-left:0px; padding-right:0px;">
+
+                      <div class = "desc">
+                      <span>
+                      <span><a> <strong>HISTORY</strong> </a></span><hr><br>
+                      Street food in South Korea has traditionally been seen as a part of popular culture. There are many kinds of traditional
+                      street food in South Korea. For example, glutinous rice cake (called Chapssal-tteok) with buckwheat jelly, Bbopgi which
+                      is a Korea traditional ice cream, a fish shaped bun with bean jam called Bungeo-ppang, roasted sweet potato, and Chinese
+                      pancakes with brown sugar filling (called Hotteok). The traditional street foods are most common in the winter season; in
+                       the summer season ice cream is more popular. Street food has been sold through many types of retail outlet, with new ones being developed over time. <br><br>
+                      <span><a> <strong>Popular Street Food Places in Korea</strong> </a></span>
+
+                      <br>
+                      Myeong-dong is very popular for street foods. From traditional food such as chicken skewers to unique new concepts of food such as
+                      deep-fried blue crab, grilled scallops and more. The street food of Myeong-dong has become famous. Most foreign tourists who visit Myeong-dong
+                      make have their meals at the stalls. There are 200 stalls in Myeong-dong, half of which are food stalls
+                      <br>
+
+                    </span</div></div></div></div></div><br>
+
+       <div id="menu" class="section">
+          <h2>OUR MENU</h2>
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'gogi')" id="defaultOpen">KOREAN GOGI</button>
+                  <button class="tablinks" onclick="openCity(event, 'set')">ALL DAY SET</button>
+                  <button class="tablinks" onclick="openCity(event, 'drink')">DRINKS</button>
+                </div>
+
+                <div id="gogi" class="tabcontent">
+                  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                 <img src="im2.jpeg" alt="spicy">
+                 <p>RM 30.50 - spicy and not suitable for those who have health problem such as gastric</p>
+                 <img src="im5.jpeg" alt="nonspicy">
+                 <p> RM 29.90 - suitable for those who love non-spicy food</p>
+                </div>
+
+                <div id="set" class="tabcontent">
+                  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                  <h3>ALL DAY SET</h3>
+                  <img src="im4.jpeg" alt="foodset">
+                  <p>RM 43.90 - including a set of chicken wings, a jar of green tea, a bowl of korean beef.</p>
+                </div>
+
+                <div id="drink" class="tabcontent">
+                  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                  <h3>DRINK</h3>
+                  <img src="drink1.jpeg" alt="blackc">
+                  <p>RM 4.50 -blackcurrent juice</p>
+                  <img src="drink2.jpeg" alt="lemon">
+                   <p> RM 3.00-lemon juice</p>
+                </div> </div>
+
+                <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+                document.getElementById("defaultOpen").click();
+                </script>
+
+      <div id="promo" class="section">
+          <div class="promotion-section section-body" style="padding-left:0px padding-right:0px;">
+                <div class="container contContainer">
+                      <div class="col-lg-10 col-lg-offset-1 col-md-12" style="padding-left:0px;padding-right:0px;">
+
+                        <div class="desc">
+                          <span>
+                            <span><a> <strong>PROMOTION</strong></a></span><hr>
+                            <h3>CHECK OUT WHAT WE WANT SERVE EVERY WEEK, SPECIALLY FOR YOU</h3>
+                              <h4>*** Prices in East Malaysia may vary from prices shown.</h4>
+                              <img src="im1.jpeg" alt="imge">
+                              <li><strong>price:RM 12.40(np:RM24.00)</strong></li>
+                              <li><strong>you will get free a green tea glass and a bowl of kimchi.</strong></li>
+
+                              <img src="im2.jpeg" alt="imge">
+                              <li><strong>price:RM 20.00(np:RM34.60)</strong></li>
+                              <li><strong>if you add RM 10.00 more, you will get one additional set of this menu.</strong></li>
+
+                              <img src="im3.jpeg" alt="imge">
+                              <li><strong>price:RM 23.00(np:RM29.60)</strong></li>
+                              <li><strong>you will get 30% if you purchase any menu in this restaurant(limited to first 200 customers)</strong></li>
+                           </span></div></div></div></div></div><br>
+
+                          <details>
+                               <summary>Let's place the order</summary>
+                             <dl>
+                               <dt>Main Dish</dt>
+                               <dd><input type="checkbox" name="food1" value="TC">Topokki cheese<br>
+                               No.Pax:<input type="number" name="np"><br>
+                               <input type="checkbox" name="food2" value="SC">Samyang Carbonara<br>
+                               No.Pax:<input type="number" name="np"><br>
+                               <input type="checkbox" name="food3" value="JJ">Jjajangmyeon<br>
+                               No.Pax:<input type="number" name="np"></dd>
+
+                               <dt>Hot Drinks</dt>
+                               <dd><input type="checkbox" name="drink1" value="HL">Honey Lemon<br>
+                               No.Pax:<input type="number" name="np"><br>
+                               <input type="checkbox" name="drink2" value="BC">Brown Coffee<br>
+                               No.Pax:<input type="number" name="np"><br>
+                               <input type="checkbox" name="drink3" value="GT">Green Tea<br>
+                               No.Pax:<input type="number" name="np"></dd>
+                             </dl>  </details>
+
+                             <details>
+                               <summary>Complete Your Order Here!</summary>
+                               <form>
+                                 <fieldset>
+                                 <legend>Personal information:</legend>
+                                  Name:<br>
+                                 <input type="text" name="name">
+                                 <br>
+                                 Telephone Number:<br>
+                                 <input type="text" name="phonenumber">
+                                 <br>
+                                 Pax:<br>
+                                 <input type="text" name="pax">
+                                 <br>
+                                 Date and Time:<br>
+                                <input type="datetime-local" name="dt">
+                                 <br><br>
+                                 Payment:<br>
+                                 <input type="text" name="pay">
+                                 <br><br>
+                                <textarea>State your reminder here.</textarea>
+                                 <br><br>
+                                 <button type="button" onclick="alert('Order Have Been Delivered!')">Submit!</button>
+                                 </fieldset>
+                               </form>
+                             </details>
+
+              <div id="location" class="section">
+                    <div class="history">
+                          Our location : </div>
+                    <div class = "loc">
+                    <span style="color :solid black ;font-size : 20px;"><br><br>
+
+                         1. Johor<br>
+                         2. Petaling Jaya<br>
+                         3. Serdang<br>
+                         4. Perak<br>
+                         5. Batu Pahat</span></div></div><br>
+
+                  <div id="contact" class="coninfo">
+                    <a>CONTACT US AT : </a><hr>
+                        <div class="row">
+                              <div class="column">
+                                  <img src="ig.gif" alt="Insta">
+                                      <figcaption><a href="www.@SaranghaeAIAig.com">@SaranghaeAIAig</a></figcaption>
+                                       </div>
+                                   <div class="column">
+                                       <img src="fb.gif" alt="Faceb">
+                                        <figcaption><a href="www.@SaranghaeAIAfb.com">@SaranghaeAIAfb</a></figcaption>
+                                      </div>
+                                  <div class="column">
+                                       <img src="twitter.gif" alt="Tweet">
+                                        <figcaption><a href="www.@SaranghaeAIAtw.com">@SaranghaeAIAtw</a></figcaption>
+                                      </div>
+                              <div class="column">
+                                    <img src="call.gif" alt="calling">
+                             <figcaption><a href="www.@SaranghaeHotline.com">09-8442427</a></figcaption>
+                        </div></div></div>
+
+    <footer>
+        <p>Saranghae Street Food Sdn Bhd (56372802-E). Copyright &copy; Saranghae Street Food Korean. All right Reserved.</p>
+    </footer>
+
+  </body>
+</html>
